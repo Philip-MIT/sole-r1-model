@@ -12,7 +12,7 @@ This is the repository for the paper:
 SOLE-R1 is a video-language reasoning model designed for guiding online RL with per-timestep chain-of-thought reasoning and progress prediction.
 
 <p align="center">
-  <img src="static/fig1_v3b.png"  alt="Figure 1" width="1000">
+  <img src="assets/fig1_v3b.png"  alt="Figure 1" width="1000">
 </p>
 
 ---
@@ -20,22 +20,60 @@ SOLE-R1 is a video-language reasoning model designed for guiding online RL with 
 https://arxiv.org/abs/2603.28730
 
 ### Project page
-https://philipmit.github.io/sole-r1/
+https://philip-mit.github.io/sole-r1/
 
 ## Example video
 
 
 ## 🚀 Quick Start
+[RoboReason](https://github.com/Philip-MIT/roboreason) provides the easiest way for downloading and using SOLE-R1, along with other recent reward models such as Robometer, RoboReward, and TOPReward.
 ```python
+# install package: pip install -U roboreason 
+# or clone repo: git clone https://github.com/Philip-MIT/roboreason
+
+import roboreason as rr
+
+video_paths = ["path/to/your/robot_video.mp4"]
+task_description = "Describe the robot task here, e.g., close the left drawer."
+
+# Generate SOLE-R1 task-progress rewards and per-timestep reasoning traces.
+# Use view_type_per_video='external and wrist' when the video contains both views.
+rewards, reasoning_traces = rr.generate(
+    model="SOLE-R1",
+    task_description=task_description,
+    video_paths=video_paths,
+    view_type_per_video=["external and wrist"],
+    verbose=False,
+)
+
+print("Predicted task-progress rewards:")
+print(rewards[0])
+
+print("\nFirst reasoning trace:")
+print(reasoning_traces[0][0])
+
+# Optional: save a video visualization with predicted rewards / reasoning.
+rr.video_plot(
+    outputs=[
+        {
+            "model": "SOLE-R1",
+            "rewards": rewards[0],
+            "reasoning_traces": reasoning_traces[0],
+        }
+    ],
+    video_path=video_paths[0],
+    plot_save_path="sole_r1_output.mp4",
+    verbose=False,
+)
 ```
 
-## 🎥 Demos
+<!-- ## 🎥 Demos
 
 Example videos demonstrating SOLE-R1 frame-level reasoning and task progress prediction can be found at:
 
-https://philipmit.github.io/sole-r1/
+https://philip-mit.github.io/sole-r1/
 
----
+--- -->
 
 ## Model Checkpoints
 
@@ -105,7 +143,7 @@ If you use SOLE-R1 data or models in your research, please cite:
 ## 📄 License
 
 This project is released under the MIT License unless otherwise specified.  
-See the LICENSE file for details.
+<!-- See the LICENSE file for details. -->
 
 ---
 
