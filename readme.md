@@ -1,3 +1,6 @@
+
+
+
 <h1 align="center">
   SOLE-R1: Video-Language Reasoning as the<br>
   Sole Reward for On-Robot RL
@@ -24,7 +27,9 @@ https://philip-mit.github.io/sole-r1/
 
 ## Example video
 
-<video src="assets/robosuite_lift_episode_12_unsuccessful_max_reward_38.mp4" controls></video>
+<!-- <video src="assets/robosuite_lift_episode_12_unsuccessful_max_reward_38.mp4" controls></video> -->
+https://github.com/user-attachments/assets/0d804a7d-c00a-4206-98be-421c91329f8e
+
 
 ## 🚀 Quick Start
 [RoboReason](https://github.com/Philip-MIT/roboreason) provides the easiest way for downloading and using SOLE-R1, along with other recent reward models such as Robometer, RoboReward, and TOPReward.
