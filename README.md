@@ -4,8 +4,8 @@
 </h1>
 
 [![arXiv](https://img.shields.io/badge/arXiv-2603.02115-b31b1b.svg)](https://arxiv.org/abs/2603.28730)
-[![Website](https://img.shields.io/badge/Website-sole--r1-181717?logo=githubpages)](https://philip-mit.github.io/sole-r1/)
-[![Model](https://img.shields.io/badge/Model-FFD21E?logo=huggingface)](https://huggingface.co/Philip-MIT/SOLE-R1-8B)
+[![Website](https://img.shields.io/badge/Website-sole--r1-87CEEB?logo=githubpages)](https://philip-mit.github.io/sole-r1/)
+[![Model](https://img.shields.io/badge/Model-SOLE--R1--8B-blue?logo=huggingface)](https://huggingface.co/Philip-MIT/SOLE-R1-8B)
 [![Data](https://img.shields.io/badge/Dataset-RBM--1M-FFD21E?logo=huggingface)](https://huggingface.co/Philip-MIT/sole_training_data)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
