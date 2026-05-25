@@ -6,7 +6,7 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2603.02115-b31b1b.svg)](https://arxiv.org/abs/2603.28730)
 [![Website](https://img.shields.io/badge/Website-SOLE--R1-87CEEB?logo=githubpages)](https://philip-mit.github.io/sole-r1/)
 [![Model](https://img.shields.io/badge/Model-SOLE--R1--8B-blue?logo=huggingface)](https://huggingface.co/Philip-MIT/SOLE-R1-8B)
-[![Data](https://img.shields.io/badge/Dataset-SOLE--Training-FFD21E?logo=huggingface)](https://huggingface.co/datasets/Philip-MIT/sole_training_data)
+[![Data](https://img.shields.io/badge/Data-SOLE--Training-FFD21E?logo=huggingface)](https://huggingface.co/datasets/Philip-MIT/sole_training_data)
 [![License: MIT](https://img.shields.io/badge/License-MIT-black.svg)](https://opensource.org/licenses/MIT)
 
 
@@ -200,7 +200,7 @@ gcloud config set auth/disable_credentials False
 
 
 
-## Reward Server
+## Reward Server and Reward Client
 
 `reward_server/` runs a ZMQ reward inference service for SOLE-R1. Given a task string plus robot video frames, it uses a local SOLE-R1 checkpoint to predict dense per-timestep task-progress rewards and returns both parsed progress scores and raw model reasoning outputs.
 
@@ -211,9 +211,6 @@ bash run.sh --checkpoint-path /path/to/sole-r1-checkpoint --port 8001
 
 The default service name is `rewards`. Inputs include `task`, `front_images`, optional `wrist_images`, `temperature`, `from_zero`, and `external_only`. The server can score either front-only video or paired front/wrist views, comparing frames against the start state and, by default, the previous timestep.
 
----
-
-## Reward Client
 
 `reward_client/` is a CLI for querying a running reward server from local robot videos, image folders, NumPy arrays, or HDF5 files. It samples frames, sends them to the server, prints per-timestep progress rewards, and can optionally save JSON results and an annotated visualization video.
 
