@@ -202,7 +202,7 @@ gcloud config set auth/disable_credentials False
 
 ## Reward Server and Reward Client
 
-`reward_server/` runs a ZMQ reward inference service for SOLE-R1. Given a task string plus robot video frames, it uses a local SOLE-R1 checkpoint to predict dense per-timestep task-progress rewards and returns both parsed progress scores and raw model reasoning outputs.
+`reward_server/` runs a reward inference service for SOLE-R1. Given a task string plus robot video frames, it uses a local SOLE-R1 checkpoint to predict dense per-timestep task-progress rewards and returns both parsed progress scores and raw model reasoning outputs.
 
 ```bash
 cd reward_server
