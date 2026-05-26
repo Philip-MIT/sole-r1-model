@@ -40,7 +40,10 @@ https://philip-mit.github.io/sole-r1/
 
 <!-- https://github.com/user-attachments/assets/4df13587-2fdf-4635-b0af-00daeed0be7e -->
 
-https://github.com/user-attachments/assets/cd481f28-0cb3-4874-bd50-1ec3ad8326ec
+<!-- https://github.com/user-attachments/assets/cd481f28-0cb3-4874-bd50-1ec3ad8326ec -->
+
+https://github.com/user-attachments/assets/3c444096-d3dd-47c7-b09d-90b0756d0f72
+
 
 ## Example videos showing SOLE-R1 reasoning traces
 
