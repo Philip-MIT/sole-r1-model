@@ -47,7 +47,9 @@ https://github.com/user-attachments/assets/3c444096-d3dd-47c7-b09d-90b0756d0f72
 
 ## Example videos showing SOLE-R1 reasoning traces
 
-https://github.com/user-attachments/assets/87d52be7-260c-4f0f-a9d5-8e4915bacab7
+<!-- https://github.com/user-attachments/assets/87d52be7-260c-4f0f-a9d5-8e4915bacab7 -->
+https://github.com/user-attachments/assets/0197c737-b5d7-41ad-bd8a-b571a5bcb574
+
 
 ## Quick start: Example reward and reasoning generation and plotting
 [RewardGen](https://github.com/Philip-MIT/rewardgen) provides the easiest way for downloading and using SOLE-R1, along with other recent reward models such as Robometer, RoboReward, and TOPReward.
