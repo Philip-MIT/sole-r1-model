@@ -76,14 +76,23 @@ print(reasoning_traces)
 ## Plotting with show_reasoning_traces=True
 output_sole = {"model": "SOLE-R1", "rewards": rewards[0], "reasoning_traces": reasoning_traces[0]}
 
+# Optional: Ground-truth rewards (available for test videos from sim environments)
+import json
+with open('test_videos/robosuite/lift/unsuccessful/robosuite_lift_episode_12_unsuccessful_max_reward_38/data.json', 'r') as f:
+    data = json.load(f)
+
+output_groundtruth = {"model": "Ground truth", "rewards": data['ground-truth rewards']}
+
+
 video_plot(
-    outputs=[output_sole], 
+    outputs=[output_groundtruth, output_sole], 
     plot_save_path='model_outputs/sole-r1/robosuite/lift/unsuccessful/robosuite_lift_episode_12_unsuccessful_max_reward_38.mp4', 
     video_path=video_paths[0],
     show_reasoning_traces=True,
     task_description=task_description,
     verbose=False
 )
+
 ```
 
 ## Reward generation and plotting across many videos
