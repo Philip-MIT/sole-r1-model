@@ -33,7 +33,14 @@ https://arxiv.org/abs/2603.28730
 https://philip-mit.github.io/sole-r1/
 
 
-## Example videos comparing SOLE-R1 rewards vs Robometer, RoboReward, TOPReward, and Gemini-3-Pro
+## Example videos showing SOLE-R1 reasoning traces
+
+<!-- https://github.com/user-attachments/assets/87d52be7-260c-4f0f-a9d5-8e4915bacab7 -->
+https://github.com/user-attachments/assets/0197c737-b5d7-41ad-bd8a-b571a5bcb574
+
+
+
+## Example videos comparing SOLE-R1 rewards vs Robometer, RoboReward, TOPReward, and Gemini-3-Pro on failed trajectories
 
 <!-- <video src="assets/robosuite_lift_episode_12_unsuccessful_max_reward_38.mp4" controls></video> -->
 <!-- https://github.com/user-attachments/assets/0d804a7d-c00a-4206-98be-421c91329f8e -->
@@ -44,11 +51,6 @@ https://philip-mit.github.io/sole-r1/
 
 https://github.com/user-attachments/assets/3c444096-d3dd-47c7-b09d-90b0756d0f72
 
-
-## Example videos showing SOLE-R1 reasoning traces
-
-<!-- https://github.com/user-attachments/assets/87d52be7-260c-4f0f-a9d5-8e4915bacab7 -->
-https://github.com/user-attachments/assets/0197c737-b5d7-41ad-bd8a-b571a5bcb574
 
 
 ## Quick start: Example reward and reasoning generation and plotting
