@@ -52,6 +52,26 @@ https://github.com/user-attachments/assets/0197c737-b5d7-41ad-bd8a-b571a5bcb574
 https://github.com/user-attachments/assets/3c444096-d3dd-47c7-b09d-90b0756d0f72
 
 
+## Optional: Download all test videos and example model outputs 
+```bash
+# 1) Install gcloud: https://cloud.google.com/sdk/docs/install
+
+# 2) Go to target directory
+# cd /path/to/rewardgen
+
+# Optional: disable credentials so you don't have to authenticate
+gcloud config set auth/disable_credentials True
+
+# Download test videos
+gcloud storage cp --recursive gs://roboreason-view-videos-philip/test_videos ./
+
+# Download model outputs for all test videos (including outputs from SOLE-R1, Robometer, RoboReward, TOPReward, and Gemini-3-Pro)
+gcloud storage cp --recursive gs://roboreason-view-videos-philip/model_outputs ./
+
+# Optional: re-enable credentials afterward if you disabled them above.
+gcloud config set auth/disable_credentials False
+
+```
 
 ## Quick start: Example reward and reasoning generation and plotting
 [RewardGen](https://github.com/Philip-MIT/rewardgen) provides the easiest way for downloading and using SOLE-R1, along with other recent reward models such as Robometer, RoboReward, and TOPReward.
@@ -193,26 +213,6 @@ local_path = snapshot_download(
 ```
 ---
 
-## Optional: Download all test videos and example model outputs 
-```bash
-# 1) Install gcloud: https://cloud.google.com/sdk/docs/install
-
-# 2) Go to target directory
-# cd /path/to/rewardgen
-
-# Optional: disable credentials so you don't have to authenticate
-gcloud config set auth/disable_credentials True
-
-# Download test videos
-gcloud storage cp --recursive gs://roboreason-view-videos-philip/test_videos ./
-
-# Download model outputs for all test videos (including outputs from SOLE-R1, Robometer, RoboReward, TOPReward, and Gemini-3-Pro)
-gcloud storage cp --recursive gs://roboreason-view-videos-philip/model_outputs ./
-
-# Optional: re-enable credentials afterward if you disabled them above.
-gcloud config set auth/disable_credentials False
-
-```
 
 
 
