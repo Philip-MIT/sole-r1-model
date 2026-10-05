@@ -85,7 +85,7 @@ from rewardgen import generate, video_plot
 video_paths = ['test_videos/robosuite/lift/unsuccessful/robosuite_lift_episode_12_unsuccessful_max_reward_38.mp4']
 task_description="Pick up the cube from the table."
 
-response = generate(model="SOLE-R1",  task_description=task_description, video_paths=video_paths, view_type_per_video=['external and wrist'], verbose=False)
+response = generate(model="SOLE-R1",  task_description=task_description, video_paths=video_paths, view_type_per_video=['static+wrist'], verbose=False)
 print(response.rewards)
 # [[0.0, 4.0, 8.0, 8.666666666666666, 9.333333333333334, 10.0, 14.0, 18.0, 22.0, 28.0, 34.0, 35.0, 36.0, 37.0, 36.333333333333336, 35.666666666666664, 35.0, 33.5, 32.0, 33.0, 34.0, 35.0, 37.0, 39.0, 41.0]]
 
@@ -127,7 +127,7 @@ task_description="Pick up the cube from the table."
 
 
 ## REWARD GENERATION
-response = generate(model="SOLE-R1",  task_description=task_description, video_paths=video_paths, view_type='external and wrist', verbose=False)
+response = generate(model="SOLE-R1",  task_description=task_description, video_paths=video_paths, view_type='static+wrist', verbose=False)
 print(response.rewards)
 print(response.output_text)
 
